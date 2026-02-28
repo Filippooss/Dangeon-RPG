@@ -1,0 +1,299 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\ui\\uicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\ui\\uicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\ui\\enemycountlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\ui\\enemycountlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\ui\\containertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\ui\\containertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\enemy\\stunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\enemy\\stunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\characters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\characters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\playerattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\playerattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\abilities\\abilityhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\abilities\\abilityhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\attackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\attackhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|c:\\users\\filippos\\documents\\godot projects\\dangeon rpg\\scripts\\characters\\player\\playermovingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47178D21-B42A-44DC-9159-381430E8E14F}|Dangeon RPG.csproj|solutionrelative:scripts\\characters\\player\\playermovingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 228,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\UIController.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\UIController.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\UIController.cs",
+              "RelativeToolTip": "Scripts\\UI\\UIController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T22:06:11.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyCountLabel.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\EnemyCountLabel.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\EnemyCountLabel.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\EnemyCountLabel.cs",
+              "RelativeToolTip": "Scripts\\UI\\EnemyCountLabel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T22:06:06.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContainerType.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\ContainerType.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\ContainerType.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\ContainerType.cs",
+              "RelativeToolTip": "Scripts\\UI\\ContainerType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T22:06:05.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StunState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Enemy\\StunState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\StunState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Enemy\\StunState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Enemy\\StunState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:39:08.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\Player.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:31:43.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AttackHitBox.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\AttackHitBox.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\AttackHitBox.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\AttackHitBox.cs",
+              "RelativeToolTip": "Scripts\\Characters\\AttackHitBox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T18:21:51.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AbilityHitBox.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Abilities\\AbilityHitBox.cs",
+              "RelativeDocumentMoniker": "Scripts\\Abilities\\AbilityHitBox.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Abilities\\AbilityHitBox.cs",
+              "RelativeToolTip": "Scripts\\Abilities\\AbilityHitBox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T18:17:33.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Characters.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Characters.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Characters.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Characters.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Characters.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:34:40.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerDashState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerDashState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerDashState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerDashState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerDashState.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T09:55:54.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIContainer.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\UIContainer.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\UIContainer.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\UI\\UIContainer.cs",
+              "RelativeToolTip": "Scripts\\UI\\UIContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T09:30:15.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:32:53.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PlayerMovingState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerMovingState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerMovingState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerMovingState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerMovingState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T21:29:58.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerAttackState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerAttackState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerAttackState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerAttackState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerAttackState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T21:19:23.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerIdleState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerIdleState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerIdleState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerIdleState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerIdleState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T20:37:03.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerState.cs",
+              "ToolTip": "C:\\Users\\filippos\\Documents\\Godot Projects\\Dangeon RPG\\Scripts\\Characters\\Player\\PlayerState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T21:27:12.193Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 172,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
