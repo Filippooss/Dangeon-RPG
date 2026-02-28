@@ -5,6 +5,8 @@ public partial class TreasureChest : StaticBody3D
 {
     [Export] private Area3D areaNode;
     [Export] private Sprite3D spriteNode;
+    [Export] private Sprite3D chestClosed;
+    [Export] private Sprite3D chestOpened;
     [Export] private RewardResource rewardResource;
 
     public override void _Ready()
@@ -21,7 +23,8 @@ public partial class TreasureChest : StaticBody3D
         }
 
         areaNode.Monitoring = false;
-
+        chestClosed.Visible = false;
+        chestOpened.Visible = true;
         GameEvents.RaiseReward(rewardResource);
     }
 
