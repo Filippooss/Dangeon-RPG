@@ -26,4 +26,9 @@ public partial class EnemiesContainer : Node3D
             GameEvents.RaiseVictory();
         }
     }
+
+    public override void _ExitTree()
+    {
+        ChildExitingTree -= EnemiesContainer_ChildExitingTree;
+    }
 }

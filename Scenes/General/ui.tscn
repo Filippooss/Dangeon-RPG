@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://bpvlqjupq4ivs"]
+[gd_scene format=3 uid="uid://bpvlqjupq4ivs"]
 
 [ext_resource type="Script" uid="uid://b4lsn4qqmi7am" path="res://Scripts/UI/UIController.cs" id="1_5lhet"]
 [ext_resource type="Texture2D" uid="uid://bpwqhgnd4ljee" path="res://Assets/Sprites/UI/UI Element 1.png" id="1_mvo4f"]
+[ext_resource type="PackedScene" uid="uid://dqpu6dfqkt5vk" path="res://Scenes/Levels/gameplay.tscn" id="2_l856s"]
 [ext_resource type="Script" uid="uid://d340ocly1dx68" path="res://Scripts/UI/UIContainer.cs" id="2_o6buf"]
 [ext_resource type="FontFile" uid="uid://ba4iwvm62fk8h" path="res://Assets/RifficFree-Bold.ttf" id="2_ve68o"]
 [ext_resource type="Texture2D" uid="uid://c1vt42wm4qoy7" path="res://Assets/Sprites/UI/UI Element 2.png" id="3_mwijp"]
@@ -21,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://j4xypkorswem" path="res://Assets/Sprites/UI/UI Element 4.png" id="19_lxtkn"]
 [ext_resource type="Texture2D" uid="uid://br4mx81l78h0o" path="res://Assets/Sprites/UI/UI ElementUI 13.png" id="20_dmp1c"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h8vb5"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2dvam"]
 texture = ExtResource("3_mwijp")
 expand_margin_left = 48.0
 expand_margin_top = 8.0
@@ -35,7 +36,7 @@ expand_margin_top = 8.0
 expand_margin_right = 48.0
 expand_margin_bottom = 16.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2dvam"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h8vb5"]
 texture = ExtResource("3_mwijp")
 expand_margin_left = 48.0
 expand_margin_top = 8.0
@@ -58,7 +59,7 @@ expand_margin_top = 16.0
 expand_margin_right = 72.0
 expand_margin_bottom = 22.0
 
-[node name="UI" type="Control"]
+[node name="UI" type="Control" unique_id=2018296556]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -67,8 +68,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5lhet")
+gameplay = ExtResource("2_l856s")
 
-[node name="Start" type="VBoxContainer" parent="." node_paths=PackedStringArray("ButtonNode")]
+[node name="Start" type="VBoxContainer" parent="." unique_id=951624221 node_paths=PackedStringArray("ButtonNode")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -85,21 +87,21 @@ grow_vertical = 2
 script = ExtResource("2_o6buf")
 ButtonNode = NodePath("Button")
 
-[node name="TextureRect" type="TextureRect" parent="Start"]
+[node name="TextureRect" type="TextureRect" parent="Start" unique_id=698954901]
 layout_mode = 2
 texture = ExtResource("1_mvo4f")
 
-[node name="Button" type="Button" parent="Start"]
+[node name="Button" type="Button" parent="Start" unique_id=135015354]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_ve68o")
 theme_override_font_sizes/font_size = 28
-theme_override_styles/focus = SubResource("StyleBoxTexture_h8vb5")
-theme_override_styles/hover = SubResource("StyleBoxTexture_5hnmt")
 theme_override_styles/normal = SubResource("StyleBoxTexture_2dvam")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5hnmt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_h8vb5")
 text = "Start"
 
-[node name="Stats" type="PanelContainer" parent="."]
+[node name="Stats" type="PanelContainer" parent="." unique_id=671074552]
 visible = false
 layout_mode = 0
 offset_left = 32.0
@@ -110,22 +112,22 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_xmsm1")
 script = ExtResource("2_o6buf")
 Container = 4
 
-[node name="MarginContainer" type="MarginContainer" parent="Stats"]
+[node name="MarginContainer" type="MarginContainer" parent="Stats" unique_id=2134570107]
 layout_mode = 2
 theme_override_constants/margin_left = 15
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Stats/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Stats/MarginContainer" unique_id=1685700966]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Health" type="Panel" parent="Stats/MarginContainer/VBoxContainer"]
+[node name="Health" type="Panel" parent="Stats/MarginContainer/VBoxContainer" unique_id=1717771379]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_iem7b")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/Health"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/Health" unique_id=916296488]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 4.0
@@ -133,11 +135,11 @@ offset_right = 76.0
 offset_bottom = 44.0
 theme_override_constants/separation = 20
 
-[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/Health/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/Health/HBoxContainer" unique_id=1031440844]
 layout_mode = 2
 texture = ExtResource("8_qcuis")
 
-[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/Health/HBoxContainer"]
+[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/Health/HBoxContainer" unique_id=1244950034]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
@@ -147,12 +149,12 @@ text = "---"
 script = ExtResource("9_7ytpu")
 stateResources = ExtResource("10_olmxj")
 
-[node name="Strength" type="Panel" parent="Stats/MarginContainer/VBoxContainer"]
+[node name="Strength" type="Panel" parent="Stats/MarginContainer/VBoxContainer" unique_id=1293782202]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_iem7b")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/Strength"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/Strength" unique_id=693134143]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 4.0
@@ -160,11 +162,11 @@ offset_right = 76.0
 offset_bottom = 44.0
 theme_override_constants/separation = 15
 
-[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/Strength/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/Strength/HBoxContainer" unique_id=289953622]
 layout_mode = 2
 texture = ExtResource("9_1ttpc")
 
-[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/Strength/HBoxContainer"]
+[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/Strength/HBoxContainer" unique_id=2117807808]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
@@ -174,12 +176,12 @@ text = "---"
 script = ExtResource("9_7ytpu")
 stateResources = ExtResource("12_qjdey")
 
-[node name="EnemyCount" type="Panel" parent="Stats/MarginContainer/VBoxContainer"]
+[node name="EnemyCount" type="Panel" parent="Stats/MarginContainer/VBoxContainer" unique_id=161063107]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_iem7b")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/EnemyCount"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/EnemyCount" unique_id=829678075]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 4.0
@@ -187,11 +189,11 @@ offset_right = 76.0
 offset_bottom = 44.0
 theme_override_constants/separation = 20
 
-[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/EnemyCount/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Stats/MarginContainer/VBoxContainer/EnemyCount/HBoxContainer" unique_id=1701159450]
 layout_mode = 2
 texture = ExtResource("10_7vmwi")
 
-[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/EnemyCount/HBoxContainer"]
+[node name="Label" type="Label" parent="Stats/MarginContainer/VBoxContainer/EnemyCount/HBoxContainer" unique_id=948842497]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
@@ -200,7 +202,7 @@ theme_override_font_sizes/font_size = 28
 text = "---"
 script = ExtResource("14_dy6sk")
 
-[node name="Defeat" type="PanelContainer" parent="."]
+[node name="Defeat" type="PanelContainer" parent="." unique_id=1282612475 node_paths=PackedStringArray("ButtonNode")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -217,16 +219,17 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_nyvfq")
 script = ExtResource("2_o6buf")
 Container = 3
+ButtonNode = NodePath("MarginContainer/VBoxContainer/Button")
 
-[node name="MarginContainer" type="MarginContainer" parent="Defeat"]
+[node name="MarginContainer" type="MarginContainer" parent="Defeat" unique_id=604620691]
 layout_mode = 2
 theme_override_constants/margin_top = 25
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Defeat/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Defeat/MarginContainer" unique_id=652878796]
 layout_mode = 2
 theme_override_constants/separation = 60
 
-[node name="Label" type="Label" parent="Defeat/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Defeat/MarginContainer/VBoxContainer" unique_id=51285931]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 16
@@ -236,12 +239,23 @@ text = "DEFEAT"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="Defeat/MarginContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Defeat/MarginContainer/VBoxContainer" unique_id=1719063277]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("16_frnkh")
 
-[node name="Victory" type="PanelContainer" parent="."]
+[node name="Button" type="Button" parent="Defeat/MarginContainer/VBoxContainer" unique_id=17237370]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_ve68o")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
+text = "RESTART"
+
+[node name="Victory" type="PanelContainer" parent="." unique_id=1364528876 node_paths=PackedStringArray("ButtonNode")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -258,16 +272,17 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_nyvfq")
 script = ExtResource("2_o6buf")
 Container = 2
+ButtonNode = NodePath("MarginContainer/VBoxContainer/Button")
 
-[node name="MarginContainer" type="MarginContainer" parent="Victory"]
+[node name="MarginContainer" type="MarginContainer" parent="Victory" unique_id=2043903940]
 layout_mode = 2
 theme_override_constants/margin_top = 25
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Victory/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Victory/MarginContainer" unique_id=1184116399]
 layout_mode = 2
 theme_override_constants/separation = 60
 
-[node name="Label" type="Label" parent="Victory/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Victory/MarginContainer/VBoxContainer" unique_id=1671483630]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 16
@@ -277,12 +292,23 @@ text = "VICTODY"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="Victory/MarginContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Victory/MarginContainer/VBoxContainer" unique_id=1829653364]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("17_7ttsk")
 
-[node name="Pause" type="PanelContainer" parent="." node_paths=PackedStringArray("ButtonNode")]
+[node name="Button" type="Button" parent="Victory/MarginContainer/VBoxContainer" unique_id=1268821275]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_ve68o")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
+text = "EXIT TO MENU"
+
+[node name="Pause" type="PanelContainer" parent="." unique_id=1871638445 node_paths=PackedStringArray("ButtonNode")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -301,15 +327,15 @@ script = ExtResource("2_o6buf")
 Container = 1
 ButtonNode = NodePath("MarginContainer/VBoxContainer/Button")
 
-[node name="MarginContainer" type="MarginContainer" parent="Pause"]
+[node name="MarginContainer" type="MarginContainer" parent="Pause" unique_id=1268189349]
 layout_mode = 2
 theme_override_constants/margin_top = 25
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Pause/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause/MarginContainer" unique_id=1633793511]
 layout_mode = 2
 theme_override_constants/separation = 60
 
-[node name="Label" type="Label" parent="Pause/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Pause/MarginContainer/VBoxContainer" unique_id=541446371]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 16
@@ -320,23 +346,23 @@ text = "PAUSED
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="Pause/MarginContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Pause/MarginContainer/VBoxContainer" unique_id=931123816]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("18_ygcj7")
 
-[node name="Button" type="Button" parent="Pause/MarginContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="Pause/MarginContainer/VBoxContainer" unique_id=66998812]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_ve68o")
 theme_override_font_sizes/font_size = 28
-theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
-theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
 theme_override_styles/normal = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
 text = "CONTINUE"
 
-[node name="Reward" type="PanelContainer" parent="." node_paths=PackedStringArray("ButtonNode", "TextureNode", "LabelNode")]
+[node name="Reward" type="PanelContainer" parent="." unique_id=24910549 node_paths=PackedStringArray("ButtonNode", "TextureNode", "LabelNode")]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -357,15 +383,15 @@ ButtonNode = NodePath("MarginContainer/VBoxContainer/VBoxContainer/RewardButton"
 TextureNode = NodePath("MarginContainer/VBoxContainer/VBoxContainer/TextureRect")
 LabelNode = NodePath("MarginContainer/VBoxContainer/VBoxContainer/RewardText")
 
-[node name="MarginContainer" type="MarginContainer" parent="Reward"]
+[node name="MarginContainer" type="MarginContainer" parent="Reward" unique_id=1172895995]
 layout_mode = 2
 theme_override_constants/margin_top = 25
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Reward/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Reward/MarginContainer" unique_id=1205594202]
 layout_mode = 2
 theme_override_constants/separation = 50
 
-[node name="Label" type="Label" parent="Reward/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Reward/MarginContainer/VBoxContainer" unique_id=1315003788]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 16
@@ -375,16 +401,16 @@ text = "REWARD"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Reward/MarginContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Reward/MarginContainer/VBoxContainer" unique_id=1233717712]
 layout_mode = 2
 theme_override_constants/separation = 35
 
-[node name="TextureRect" type="TextureRect" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1899749228]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("20_dmp1c")
 
-[node name="RewardText" type="Label" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="RewardText" type="Label" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer" unique_id=755562525]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
@@ -394,13 +420,13 @@ text = "REWARD"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RewardButton" type="Button" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="RewardButton" type="Button" parent="Reward/MarginContainer/VBoxContainer/VBoxContainer" unique_id=977697406]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_ve68o")
 theme_override_font_sizes/font_size = 28
-theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
-theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
 theme_override_styles/normal = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jiat1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_jiat1")
 text = "CONTINUE"

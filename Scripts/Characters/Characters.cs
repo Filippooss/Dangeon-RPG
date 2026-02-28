@@ -12,7 +12,7 @@ public abstract partial class Characters : CharacterBody3D
     [Export] public Area3D HurtBoxNode { get; private set; }
     [Export] public Area3D HitBoxNode { get; private set; }
     [Export] public CollisionShape3D HitboxShapeNode { get; private set; }
-    //Propeties
+    //Properties
     public AnimationPlayer AnimationPlayer => animationPlayer;
 
     [ExportGroup("Ai Nodes")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://b75d3jn2catuo"]
+[gd_scene format=3 uid="uid://b75d3jn2catuo"]
 
 [ext_resource type="Script" uid="uid://c8pihjpfw5dj6" path="res://Scripts/Characters/Enemy/Enemy.cs" id="1_3wl3u"]
 [ext_resource type="Texture2D" uid="uid://7xlu3rnmqkrf" path="res://Assets/Sprites/Characters/Enemy Knight/Attack/0_Demons_of_Darkness_Slashing_000.png" id="1_i5hon"]
@@ -96,7 +96,6 @@
 
 [sub_resource type="Resource" id="Resource_ypfoj"]
 script = ExtResource("2_6783l")
-StatType = 0
 StatValue = 30.0
 
 [sub_resource type="Resource" id="Resource_nki58"]
@@ -242,7 +241,7 @@ radius = 0.961793
 [sub_resource type="BoxShape3D" id="BoxShape3D_exert"]
 size = Vector3(0.5, 0.5, 0.5)
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachine", "HurtBoxNode", "HitBoxNode", "HitboxShapeNode", "NavigationAgent", "ChaseAreaNode", "AttackAreaNode", "timer")]
+[node name="Enemy" type="CharacterBody3D" unique_id=1406493575 node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachine", "HurtBoxNode", "HitBoxNode", "HitboxShapeNode", "NavigationAgent", "ChaseAreaNode", "AttackAreaNode", "timer")]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_3wl3u")
@@ -258,87 +257,85 @@ ChaseAreaNode = NodePath("ChaseArea")
 AttackAreaNode = NodePath("AttackArea")
 timer = NodePath("ShaderTimer")
 
-[node name="ShaderTimer" type="Timer" parent="."]
+[node name="ShaderTimer" type="Timer" parent="." unique_id=134241442]
 wait_time = 0.25
 one_shot = true
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=475031449]
 material_overlay = SubResource("ShaderMaterial_ma4pe")
 pixel_size = 0.0026
 texture = ExtResource("78_uxn1y")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_y7f7a")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1768484740]
+libraries/ = SubResource("AnimationLibrary_y7f7a")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1136439517]
 shape = SubResource("CapsuleShape3D_5nku8")
 
-[node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("71_n6i1e")]
+[node name="StateMachine" parent="." unique_id=1934010646 node_paths=PackedStringArray("currentState", "states") instance=ExtResource("71_n6i1e")]
 currentState = NodePath("IdleState")
 states = [NodePath("ReturnState"), NodePath("IdleState"), NodePath("PatrolState"), NodePath("ChaseState"), NodePath("AttackState"), NodePath("DeathState"), NodePath("StunState")]
 
-[node name="IdleState" type="Node" parent="StateMachine"]
+[node name="IdleState" type="Node" parent="StateMachine" unique_id=1904388830]
 script = ExtResource("72_0tvy1")
 
-[node name="ReturnState" type="Node" parent="StateMachine"]
+[node name="ReturnState" type="Node" parent="StateMachine" unique_id=750478342]
 script = ExtResource("73_jy8pq")
 
-[node name="PatrolState" type="Node" parent="StateMachine" node_paths=PackedStringArray("idleTimer")]
+[node name="PatrolState" type="Node" parent="StateMachine" unique_id=1831838489 node_paths=PackedStringArray("idleTimer")]
 script = ExtResource("74_33rtm")
 maxTimerTime = 3.0
 idleTimer = NodePath("Timer")
 
-[node name="Timer" type="Timer" parent="StateMachine/PatrolState"]
+[node name="Timer" type="Timer" parent="StateMachine/PatrolState" unique_id=752452379]
 one_shot = true
 
-[node name="ChaseState" type="Node" parent="StateMachine" node_paths=PackedStringArray("timer")]
+[node name="ChaseState" type="Node" parent="StateMachine" unique_id=688738181 node_paths=PackedStringArray("timer")]
 script = ExtResource("75_1olyp")
 timer = NodePath("Timer")
 
-[node name="Timer" type="Timer" parent="StateMachine/ChaseState"]
+[node name="Timer" type="Timer" parent="StateMachine/ChaseState" unique_id=1221639463]
 wait_time = 0.5
 autostart = true
 
-[node name="AttackState" type="Node" parent="StateMachine"]
+[node name="AttackState" type="Node" parent="StateMachine" unique_id=1830144619]
 script = ExtResource("76_ru7hl")
 
-[node name="DeathState" type="Node" parent="StateMachine"]
+[node name="DeathState" type="Node" parent="StateMachine" unique_id=1984403798]
 script = ExtResource("78_b0nj1")
 
-[node name="StunState" type="Node" parent="StateMachine"]
+[node name="StunState" type="Node" parent="StateMachine" unique_id=1557196132]
 script = ExtResource("92_738x1")
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1479812076]
 debug_enabled = true
 
-[node name="ChaseArea" type="Area3D" parent="."]
+[node name="ChaseArea" type="Area3D" parent="." unique_id=1909368902]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ChaseArea"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChaseArea" unique_id=557854214]
 shape = SubResource("CylinderShape3D_5a2k8")
 
-[node name="AttackArea" type="Area3D" parent="."]
+[node name="AttackArea" type="Area3D" parent="." unique_id=1734483353]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea" unique_id=1192650955]
 shape = SubResource("CylinderShape3D_ecchc")
 
-[node name="HurtBox" type="Area3D" parent="."]
+[node name="HurtBox" type="Area3D" parent="." unique_id=2067123301]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox" unique_id=404603921]
 shape = SubResource("CapsuleShape3D_5nku8")
 
-[node name="Hitbox" type="Area3D" parent="."]
+[node name="Hitbox" type="Area3D" parent="." unique_id=896202046]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("79_bslyi")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox" unique_id=1769205471]
 shape = SubResource("BoxShape3D_exert")
 disabled = true

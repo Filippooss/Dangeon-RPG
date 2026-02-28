@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://cve3v2ekeonvj"]
+[gd_scene format=3 uid="uid://cve3v2ekeonvj"]
 
 [ext_resource type="Texture2D" uid="uid://cnq43kqo3qmcd" path="res://Assets/Sprites/Characters/Player/Running/Running_011.png" id="1_pwdk7"]
 [ext_resource type="Script" uid="uid://bwas8dc4etwxs" path="res://Scripts/Characters/Player/Player.cs" id="1_x67ud"]
@@ -238,7 +238,7 @@ height = 1.46453
 [sub_resource type="BoxShape3D" id="BoxShape3D_em6ri"]
 size = Vector3(0.5, 0.5, 1.1983)
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachine", "HurtBoxNode", "HitBoxNode", "HitboxShapeNode", "timer")]
+[node name="Player" type="CharacterBody3D" unique_id=1180713099 node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachine", "HurtBoxNode", "HitBoxNode", "HitboxShapeNode", "timer")]
 collision_layer = 2
 collision_mask = 5
 floor_max_angle = 1.55334
@@ -253,76 +253,74 @@ HitBoxNode = NodePath("HitBox")
 HitboxShapeNode = NodePath("HitBox/CollisionShape3D")
 timer = NodePath("ShaderTimer")
 
-[node name="ShaderTimer" type="Timer" parent="."]
+[node name="ShaderTimer" type="Timer" parent="." unique_id=1213343569]
 wait_time = 0.25
 one_shot = true
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1505738695]
 material_overlay = SubResource("ShaderMaterial_j5dlq")
 pixel_size = 0.0025
 texture_filter = 0
 texture = ExtResource("39_sxa6j")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_c48y4")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=817540717]
+libraries/ = SubResource("AnimationLibrary_c48y4")
 
-[node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("38_w3uah")]
+[node name="StateMachine" parent="." unique_id=107618096 node_paths=PackedStringArray("currentState", "states") instance=ExtResource("38_w3uah")]
 currentState = NodePath("IdleState")
 states = [NodePath("IdleState"), NodePath("MovingState"), NodePath("DashState"), NodePath("AttackState"), NodePath("DeathState")]
 
-[node name="IdleState" type="Node" parent="StateMachine"]
+[node name="IdleState" type="Node" parent="StateMachine" unique_id=1836848929]
 script = ExtResource("39_bixut")
 
-[node name="MovingState" type="Node" parent="StateMachine"]
+[node name="MovingState" type="Node" parent="StateMachine" unique_id=1439269337]
 script = ExtResource("40_a6r5x")
 speed = 5.0
 
-[node name="DashState" type="Node" parent="StateMachine" node_paths=PackedStringArray("dashTimer", "cooldownTimerNode")]
+[node name="DashState" type="Node" parent="StateMachine" unique_id=553647803 node_paths=PackedStringArray("dashTimer", "cooldownTimerNode")]
 script = ExtResource("41_pkkhs")
 dashTimer = NodePath("DurationTimer")
 cooldownTimerNode = NodePath("CouldownTimer")
 bombScene = ExtResource("83_d55b6")
 
-[node name="DurationTimer" type="Timer" parent="StateMachine/DashState"]
+[node name="DurationTimer" type="Timer" parent="StateMachine/DashState" unique_id=329936399]
 wait_time = 0.4
 one_shot = true
 
-[node name="CouldownTimer" type="Timer" parent="StateMachine/DashState"]
+[node name="CouldownTimer" type="Timer" parent="StateMachine/DashState" unique_id=1434933086]
 process_mode = 3
 wait_time = 3.0
 one_shot = true
 ignore_time_scale = true
 
-[node name="AttackState" type="Node" parent="StateMachine" node_paths=PackedStringArray("comboTimerNode")]
+[node name="AttackState" type="Node" parent="StateMachine" unique_id=1122348961 node_paths=PackedStringArray("comboTimerNode")]
 script = ExtResource("66_k351g")
 comboTimerNode = NodePath("Timer")
 lightningScene = ExtResource("85_wg2l6")
 
-[node name="Timer" type="Timer" parent="StateMachine/AttackState"]
+[node name="Timer" type="Timer" parent="StateMachine/AttackState" unique_id=268729900]
 wait_time = 2.0
 one_shot = true
 
-[node name="DeathState" type="Node" parent="StateMachine"]
+[node name="DeathState" type="Node" parent="StateMachine" unique_id=1591094946]
 script = ExtResource("83_myyn0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1551833353]
 shape = SubResource("CapsuleShape3D_7hv5j")
 
-[node name="HitBox" type="Area3D" parent="."]
+[node name="HitBox" type="Area3D" parent="." unique_id=81791860]
 collision_layer = 2
 collision_mask = 4
 script = ExtResource("85_tlg2c")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="HitBox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitBox" unique_id=579181546]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.051178)
 shape = SubResource("BoxShape3D_em6ri")
 disabled = true
 
-[node name="Hurtbox" type="Area3D" parent="."]
+[node name="Hurtbox" type="Area3D" parent="." unique_id=34495937]
 collision_layer = 0
 collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox" unique_id=1686335595]
 shape = SubResource("CapsuleShape3D_7hv5j")

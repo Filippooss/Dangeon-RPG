@@ -5,6 +5,7 @@ using System.Linq;
 
 public partial class UIController : Control
 {
+    [Export] private Main main;
     private Dictionary<ContainerType, UIContainer> containers;
 
     private bool canPause;
@@ -21,14 +22,14 @@ public partial class UIController : Control
 
         containers[ContainerType.Reward].ButtonNode.Pressed += HandleRewardButtonPressed;
 
+        containers[ContainerType.Victory].ButtonNode.Pressed += HandleVictoryButtonPressed;
+
         GameEvents.OnEndGame += GameEvents_OnEndGame;
 
         GameEvents.OnVictory += GameEvents_OnVictory;
 
         GameEvents.OnReward += GameEvents_OnReward;
     }
-
-
 
     public override void _Input(InputEvent @event)
     {
@@ -104,4 +105,13 @@ public partial class UIController : Control
         containers[ContainerType.Stats].Visible = true;
         containers[ContainerType.Reward].Visible = false;
     }
+
+    private void HandleVictoryButtonPressed()
+    {
+        containers[ContainerType.Start].Visible = true;
+        containers[ContainerType.Victory].Visible = false;
+
+        GameEvents.RaiseRestartGame();
+    }
+
 }
