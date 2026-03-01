@@ -7,13 +7,21 @@ using System;
 public partial class EnemiesContainer : Node3D
 {
     private int totalEnemies = 0;
+    private bool hasEnded = false;
     public override void _Ready()
     {
         totalEnemies = GetChildCount();
-
+        GD.Print($"total enemies {totalEnemies}");
         GameEvents.RaiseNewEnemyCount(totalEnemies);
 
         ChildExitingTree += EnemiesContainer_ChildExitingTree;
+        GameEvents.OnEndGame += HandleEndGame;
+    }
+
+    private void HandleEndGame()
+    {
+        ChildExitingTree -= EnemiesContainer_ChildExitingTree;
+        hasEnded = true;
     }
 
     private void EnemiesContainer_ChildExitingTree(Node node)
@@ -23,12 +31,16 @@ public partial class EnemiesContainer : Node3D
 
         if (totalEnemies == 0)
         {
+            GD.Print($"total enemies {totalEnemies}");
             GameEvents.RaiseVictory();
         }
     }
 
     public override void _ExitTree()
     {
-        ChildExitingTree -= EnemiesContainer_ChildExitingTree;
+        if (!hasEnded)
+            ChildExitingTree -= EnemiesContainer_ChildExitingTree;
+        GameEvents.OnEndGame -= HandleEndGame;
+
     }
 }

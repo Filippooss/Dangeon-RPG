@@ -90,6 +90,7 @@
 [ext_resource type="PackedScene" uid="uid://dvqdnb4umsvrh" path="res://Scenes/Abilities/lightning.tscn" id="85_wg2l6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_j5dlq"]
+resource_local_to_scene = true
 render_priority = 1
 shader = ExtResource("4_frgmi")
 shader_parameter/active = false

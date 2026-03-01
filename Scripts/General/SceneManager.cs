@@ -28,5 +28,6 @@ public partial class SceneManager : Node
     public void UnloadScene()
     {
         current_gameplay.QueueFree();
+        current_gameplay = null;
     }
 }

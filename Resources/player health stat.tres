@@ -1,8 +1,7 @@
-[gd_resource type="Resource" script_class="StatResource" load_steps=2 format=3 uid="uid://dhkfy6kfqlc2k"]
+[gd_resource type="Resource" script_class="StatResource" format=3 uid="uid://dhkfy6kfqlc2k"]
 
 [ext_resource type="Script" uid="uid://cm750drhm5pdr" path="res://Scripts/Resourses/StatResource.cs" id="1_vpnai"]
 
 [resource]
 script = ExtResource("1_vpnai")
-StatType = 0
 StatValue = 100.0

@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://b4lsn4qqmi7am" path="res://Scripts/UI/UIController.cs" id="1_5lhet"]
 [ext_resource type="Texture2D" uid="uid://bpwqhgnd4ljee" path="res://Assets/Sprites/UI/UI Element 1.png" id="1_mvo4f"]
-[ext_resource type="PackedScene" uid="uid://dqpu6dfqkt5vk" path="res://Scenes/Levels/gameplay.tscn" id="2_l856s"]
 [ext_resource type="Script" uid="uid://d340ocly1dx68" path="res://Scripts/UI/UIContainer.cs" id="2_o6buf"]
 [ext_resource type="FontFile" uid="uid://ba4iwvm62fk8h" path="res://Assets/RifficFree-Bold.ttf" id="2_ve68o"]
 [ext_resource type="Texture2D" uid="uid://c1vt42wm4qoy7" path="res://Assets/Sprites/UI/UI Element 2.png" id="3_mwijp"]
@@ -68,7 +67,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5lhet")
-gameplay = ExtResource("2_l856s")
 
 [node name="Start" type="VBoxContainer" parent="." unique_id=951624221 node_paths=PackedStringArray("ButtonNode")]
 visible = false

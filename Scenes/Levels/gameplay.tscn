@@ -42,14 +42,31 @@ _data = {
 }
 point_count = 5
 
-[sub_resource type="Resource" id="Resource_vu1ed"]
+[sub_resource type="Resource" id="Resource_nfi4r"]
+resource_local_to_scene = true
+script = ExtResource("11_ld7qx")
+StatValue = 50.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
+
+[sub_resource type="Resource" id="Resource_6yw87"]
+resource_local_to_scene = true
 script = ExtResource("11_ld7qx")
 StatType = 1
-StatValue = 4.0
+StatValue = 5.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
 
-[sub_resource type="Resource" id="Resource_alvjo"]
+[sub_resource type="Resource" id="Resource_0rax1"]
+resource_local_to_scene = true
 script = ExtResource("11_ld7qx")
-StatValue = 20.0
+StatValue = 50.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
+
+[sub_resource type="Resource" id="Resource_xhpn5"]
+resource_local_to_scene = true
+script = ExtResource("11_ld7qx")
+StatType = 1
+StatValue = 5.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
 
 [node name="Gameplay" type="Node3D" unique_id=680164006]
 
@@ -125,28 +142,29 @@ rewardResource = SubResource("Resource_nc76u")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.18468, 1.60857, 14.1804)
 rewardResource = SubResource("Resource_4j38t")
 
-[node name="Enemys" type="Node3D" parent="." unique_id=134758138]
+[node name="Enemies" type="Node3D" parent="." unique_id=134758138]
 script = ExtResource("9_16ig2")
 
-[node name="Path3D" type="Path3D" parent="Enemys" unique_id=975755115]
+[node name="Path3D" type="Path3D" parent="Enemies" unique_id=975755115]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.65929, 0.970563, 9.07167)
 curve = SubResource("Curve3D_uyn2u")
 
-[node name="Enemy" parent="Enemys/Path3D" unique_id=979081370 node_paths=PackedStringArray("FollowPath") instance=ExtResource("10_0xibg")]
+[node name="Enemy" parent="Enemies/Path3D" unique_id=979081370 node_paths=PackedStringArray("FollowPath") instance=ExtResource("10_0xibg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.23155, 0.868819, 0.219901)
-statArray = Array[Object]([SubResource("Resource_vu1ed"), SubResource("Resource_alvjo")])
+statArray = Array[Object]([SubResource("Resource_nfi4r"), SubResource("Resource_6yw87")])
 FollowPath = NodePath("..")
 
-[node name="Path3D2" type="Path3D" parent="Enemys" unique_id=956961606]
+[node name="Path3D2" type="Path3D" parent="Enemies" unique_id=956961606]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.899, 0.575112, 9.07167)
 curve = SubResource("Curve3D_uyn2u")
 
-[node name="Enemy2" parent="Enemys/Path3D2" unique_id=510112213 node_paths=PackedStringArray("FollowPath") instance=ExtResource("10_0xibg")]
+[node name="Enemy2" parent="Enemies/Path3D2" unique_id=510112213 node_paths=PackedStringArray("FollowPath") instance=ExtResource("10_0xibg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30339, 0)
+statArray = Array[Object]([SubResource("Resource_0rax1"), SubResource("Resource_xhpn5")])
 FollowPath = NodePath("..")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1316588870 node_paths=PackedStringArray("target")]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 5.44213, 3.76343, 13.442)
+transform = Transform3D(1, 0, 0, 0, 0.9659259, 0.25881898, 0, -0.25881898, 0.9659259, 5.44213, 3.76343, 13.442)
 script = ExtResource("12_ecnl3")
 target = NodePath("../Player")
 positionFromTarget = Vector3(0, 2, 6)

@@ -7,5 +7,22 @@ public partial class Main : Node3D
     public override void _Ready()
     {
         GetTree().Paused = true;
+
+        GameEvents.OnStartGame += HandleStartGame;
+    }
+
+    private void HandleStartGame()
+    {
+        StartGame();
+    }
+
+    public void StartGame()
+    {
+        GetTree().Paused = false;
+    }
+    public override void _ExitTree()
+    {
+        GameEvents.OnStartGame -= HandleStartGame;
+
     }
 }

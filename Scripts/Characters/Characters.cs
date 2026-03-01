@@ -54,10 +54,9 @@ public abstract partial class Characters : CharacterBody3D
         float damage = hitBox.GetDamage();
 
         health.StatValue -= damage;
+
         shader.SetShaderParameter("active", true);
         timer.Start();
-
-        GD.Print(health.StatValue);
     }
 
     public StatResource GetStatResource(E_Stat stat)

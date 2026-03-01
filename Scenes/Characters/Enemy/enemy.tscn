@@ -94,14 +94,18 @@
 [ext_resource type="Texture2D" uid="uid://b7w3w0xrxo2gl" path="res://Assets/Sprites/Characters/Enemy Knight/TakeHit/0_Demons_of_Darkness_Hurt_011.png" id="84_utdwe"]
 [ext_resource type="Script" uid="uid://chvcxiwhq6tp1" path="res://Scripts/Characters/Enemy/EnemyStunState.cs" id="92_738x1"]
 
-[sub_resource type="Resource" id="Resource_ypfoj"]
+[sub_resource type="Resource" id="Resource_738x1"]
+resource_local_to_scene = true
 script = ExtResource("2_6783l")
-StatValue = 30.0
+StatValue = 50.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
 
-[sub_resource type="Resource" id="Resource_nki58"]
+[sub_resource type="Resource" id="Resource_mern6"]
+resource_local_to_scene = true
 script = ExtResource("2_6783l")
 StatType = 1
-StatValue = 3.0
+StatValue = 5.0
+metadata/_custom_type_script = "uid://cm750drhm5pdr"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ma4pe"]
 resource_local_to_scene = true
@@ -245,7 +249,7 @@ size = Vector3(0.5, 0.5, 0.5)
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_3wl3u")
-statArray = Array[Object]([SubResource("Resource_ypfoj"), SubResource("Resource_nki58")])
+statArray = Array[Object]([SubResource("Resource_738x1"), SubResource("Resource_mern6")])
 animationPlayer = NodePath("AnimationPlayer")
 sprite3D = NodePath("Sprite3D")
 stateMachine = NodePath("StateMachine")

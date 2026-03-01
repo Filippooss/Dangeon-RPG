@@ -2,20 +2,37 @@ using Godot;
 using System;
 
 
-public partial class Player : Characters {
+public partial class Player : Characters
+{
 
-    public override void _Ready() {
+    private static float startingHealth = 0;
+    private static float startingStrength = 0;
+    private static bool first = true;
+    public override void _Ready()
+    {
         base._Ready();
+        if (first)
+        {
+            startingHealth = GetStatResource(E_Stat.Health).StatValue;
+            startingStrength = GetStatResource(E_Stat.Strength).StatValue;
+            first = false;
+        }
+
+        //reset player
+        GetStatResource(E_Stat.Health).StatValue = startingHealth;
+        GetStatResource(E_Stat.Strength).StatValue = startingStrength;
 
         GameEvents.OnReward += GameEvents_OnReward;
     }
 
 
-    public override void _Input(InputEvent @event) {
+    public override void _Input(InputEvent @event)
+    {
         direction = Input.GetVector(GameConstants.INPUT_MOVE_LEFT, GameConstants.INPUT_MOVE_RIGHT, GameConstants.INPUT_MOVE_FORWARD, GameConstants.INPUT_MOVE_BACK);
-        
+
     }
-    private void GameEvents_OnReward(RewardResource resource) {
+    private void GameEvents_OnReward(RewardResource resource)
+    {
         StatResource targetStat = GetStatResource(resource.TargetStat);
 
         targetStat.StatValue += resource.Ammout;

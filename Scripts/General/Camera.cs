@@ -9,12 +9,12 @@ public partial class Camera : Camera3D
     public override void _Ready()
     {
         GameEvents.OnStartGame += HandleStartGame;
-        GameEvents.OnEndGame += GameEvents_OnEndGame;
+        GameEvents.OnEndGame += HandleEndGame;
     }
 
-    private void GameEvents_OnEndGame()
+    private void HandleEndGame()
     {
-        Reparent(GetTree().CurrentScene);
+        Reparent(GetParent());
     }
 
     private void HandleStartGame()
@@ -27,6 +27,6 @@ public partial class Camera : Camera3D
     public override void _ExitTree()
     {
         GameEvents.OnStartGame -= HandleStartGame;
-        GameEvents.OnEndGame -= GameEvents_OnEndGame;
+        GameEvents.OnEndGame -= HandleEndGame;
     }
 }

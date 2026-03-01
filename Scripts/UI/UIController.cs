@@ -15,14 +15,11 @@ public partial class UIController : Control
         containers = GetChildren().Where((element) => element is UIContainer).Cast<UIContainer>().ToDictionary((element) => element.Container);
 
         containers[ContainerType.Start].Show();
-
         containers[ContainerType.Start].ButtonNode.Pressed += HundleButtonStartPressed;
-
         containers[ContainerType.Pause].ButtonNode.Pressed += HandlePauseButtonPressed;
-
         containers[ContainerType.Reward].ButtonNode.Pressed += HandleRewardButtonPressed;
-
         containers[ContainerType.Victory].ButtonNode.Pressed += HandleVictoryButtonPressed;
+        containers[ContainerType.Defeat].ButtonNode.Pressed += HandleDefeatButtonPressed;
 
         GameEvents.OnEndGame += GameEvents_OnEndGame;
 
@@ -51,6 +48,7 @@ public partial class UIController : Control
 
     private void GameEvents_OnVictory()
     {
+        GD.Print("UI victory event");
         canPause = false;
 
         containers[ContainerType.Stats].Hide();
@@ -64,6 +62,8 @@ public partial class UIController : Control
         canPause = false;
 
         containers[ContainerType.Defeat].Show();
+
+        GetTree().Paused = true;
     }
 
     private void HandlePauseButtonPressed()
@@ -76,8 +76,6 @@ public partial class UIController : Control
     private void HundleButtonStartPressed()
     {
         canPause = true;
-
-        GetTree().Paused = false;
 
         containers[ContainerType.Start].Hide();
         containers[ContainerType.Stats].Show();
@@ -108,10 +106,20 @@ public partial class UIController : Control
 
     private void HandleVictoryButtonPressed()
     {
+        canPause = false;
         containers[ContainerType.Start].Visible = true;
         containers[ContainerType.Victory].Visible = false;
 
         GameEvents.RaiseRestartGame();
     }
 
+    private void HandleDefeatButtonPressed()
+    {
+        canPause = true;
+        GetTree().Paused = false;
+
+        containers[ContainerType.Defeat].Hide();
+        GameEvents.RaiseRestartGame();
+        GameEvents.RaiseStartGame();
+    }
 }
